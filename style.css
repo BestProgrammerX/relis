@@ -24,8 +24,8 @@ main h1{
 
 }
 main img{
-    width: 221px;
-    height: 124px;
+    width: 350px;
+    height: 200px;
     border-radius: 20px;
     transition: .5s linear;
 }
