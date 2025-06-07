@@ -39,3 +39,9 @@ footer{
     border-radius: 20px;
     padding: 3px;
 }
+header a{
+    text-decoration: none;
+    background-image:linear-gradient(to left,#C400A3,#FF45E0);
+    border-radius:15px;
+    padding: 5px;
+}
