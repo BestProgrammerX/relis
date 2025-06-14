@@ -20,7 +20,7 @@ main h2{
 }
 main h1{
     color: #CCFF00;
-    text-align: left;
+    text-align: center;
 
 }
 main img{
@@ -45,7 +45,7 @@ footer a{
     padding: 10px;
 
 }
-main p{
+main h2{
     color: white;
 
 }
