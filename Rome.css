@@ -6,6 +6,12 @@ header img{
     height: 45px;
     width: 45px;
 }
+header a{
+    text-decoration: none;
+    background-image:linear-gradient(to left,#e0f000,#AD7351);
+    border-radius:15px;
+    padding: 5px;
+}
 h1{
     color: #F1F6A3;
     text-align: center;
@@ -39,5 +45,3 @@ footer{
     border-radius:15px;
     padding: 3px;
 }
-
-
