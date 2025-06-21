@@ -39,9 +39,32 @@ footer{
     border-radius: 20px;
     padding: 3px;
 }
-header a{
+
+.btn_back{
     text-decoration: none;
-    background-image:linear-gradient(to left,#C400A3,#FF45E0);
+    background-image:linear-gradient(to left,#ff99cc,#ff0066);
     border-radius:15px;
     padding: 5px;
+    color: pink;
+    overflow: hidden;
+    transition: color 0.3s ease; 
+    z-index: 1;
+    
+}
+.btn_back::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(to left,  #99004d,#ff00bf);
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+    z-index: -1; 
+}
+.btn_back:hover::before{
+    opacity: 1;
+
+}
+.btn_back:hover{
+    transform: scale(1.2);
+    background-image: linear-gradient(to left,  #800080, #e600ac);
 }
