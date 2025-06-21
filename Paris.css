@@ -29,11 +29,35 @@ body{
     background-image: linear-gradient(to top,#040688,#4D50FF);
 
 }
-header a{
-    background-image: linear-gradient(to right,#B1B2FF,#434477);
-    border-radius: 15px;
+
+
+.btn_back{
     text-decoration: none;
+    background-image: linear-gradient(to right,#B1B2FF,#434477);
+    border-radius:15px;
     padding: 5px;
+    color: navy;
+    overflow: hidden;
+    transition: color 0.3s ease; 
+    z-index: 1;
+    
+}
+.btn_back::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(to left,   #000099,#3333ff);
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+    z-index: -1; 
+}
+.btn_back:hover::before{
+    opacity: 1;
+
+}
+.btn_back:hover{
+    transform: scale(1.2);
+    background-image: linear-gradient(to left,  #0033cc,#0086b3);
 }
 main h2{
     color: #7A6CF6;
