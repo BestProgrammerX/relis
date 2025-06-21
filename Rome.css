@@ -7,11 +7,34 @@ header img{
     height: 45px;
     width: 45px;
 }
-header a{
+
+.btn_back{
     text-decoration: none;
     background-image:linear-gradient(to left,#e0f000,#AD7351);
     border-radius:15px;
     padding: 5px;
+    color: yellow;
+    overflow: hidden;
+    transition: color 0.3s ease; 
+    z-index: 1;
+    
+}
+.btn_back::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(to left,  #604020,#b37700);
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+    z-index: -1; 
+}
+.btn_back:hover::before{
+    opacity: 1;
+
+}
+.btn_back:hover{
+    transform: scale(1.2);
+    background-image: linear-gradient(to left,  #996600, #bf8040);
 }
 h1{
     color: #F1F6A3;
